@@ -1,3 +1,5 @@
+//01-variables1.md ------------------------------------------------------------------------------------------------------------------------------------------------
+
 /*1. Write a program that uses a variable to store a number,
 then prints that number plus 10.*/
 let Rob = 2000;
@@ -49,3 +51,6 @@ console.log(unoDos*DosTres)
 then prints the word with all lowercase letters. */
 allCap = 'ALL CAP LETTERS'
 console.log(allCap.toLowerCase())
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
