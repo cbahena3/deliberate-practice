@@ -1,3 +1,5 @@
+#01-variables1.md ------------------------------------------------------------------------------------------------------------------------------------------------
+
 #1. Write a program that uses a variable to store a number,
 #then prints that number plus 10.
 Robert = 60
@@ -49,3 +51,6 @@ print(age * year)
 #then prints the word with all lowercase letters.
 myName= 'CRISTIAN BAHENA'
 print(myName.lower())
+
+#--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
