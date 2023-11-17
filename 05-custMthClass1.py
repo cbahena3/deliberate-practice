@@ -1,14 +1,20 @@
 # 1) Write a method that takes in a number and returns the number times two.
 # Then run the method and print the result.
-
+def banana_bread (num):
+    return num * 2
+print(banana_bread(100))
 
 # 2) Write a method that takes in a string and returns the string with all capital letters.
 # Then run the method and print the result.
-
+def all_cap(word):
+    return word.upper()
+print(all_cap("cristian"))
 
 # 3) Write a method that takes in two numbers and returns the first number subtracted by the second.
 # Then run the method and print the result.
-
+def subbing (one, two):
+    return one - two
+print(subbing(10,20))
 
 # 4) Write a method that takes in a number and returns the number times itself.
 # Then run the method and print the result.
