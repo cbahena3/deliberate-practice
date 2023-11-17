@@ -1,14 +1,19 @@
 //  1) Write a method that takes in a number and returns the number times two.
 //  Then run the method and print the result.
-
+let dub = (one) => console.log(one * 2);
+dub(20000);
 
 //  2) Write a method that takes in a string and returns the string with all capital letters.
 //  Then run the method and print the result.
-
+let allCap = (word) => console.log(word.toUpperCase());
+allCap("wallet");
 
 //  3) Write a method that takes in two numbers and returns the first number subtracted by the second.
 //  Then run the method and print the result.
-
+let subbing = (numOne, numTwo) => {
+    console.log(numOne - numTwo);
+}
+subbing(324341, 10000000);
 
 //  4) Write a method that takes in a number and returns the number times itself.
 //  Then run the method and print the result.
