@@ -1,14 +1,23 @@
 # 1) Write a method that takes in a number and returns the number times two.
 # Then run the method and print the result.
-
+def cheetos (num)
+  return num * 2
+end
+puts cheetos(100)
 
 # 2) Write a method that takes in a string and returns the string with all capital letters.
 # Then run the method and print the result.
-
+def hotdog (word)
+  return word.upcase
+end
+puts hotdog("apple")
 
 # 3) Write a method that takes in two numbers and returns the first number subtracted by the second.
 # Then run the method and print the result.
-
+def subbing (numOne, numTwo)
+  return numOne - numTwo
+end
+puts subbing(1, 3)
 
 # 4) Write a method that takes in a number and returns the number times itself.
 # Then run the method and print the result.
