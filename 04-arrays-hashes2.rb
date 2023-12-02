@@ -51,6 +51,16 @@ laptopList = [{Brand: "Apple", Model: "MacBook Air"}, {Brand: "Apple", Model: "M
 pp laptopList[1][:Model]
 
 #9 Make a hash to store definitions for 2 different words. Then add a new word and definition and print the hash to see the result.
-dictionary = []
+dictionary = {Banana: "Yellow long fruit", Happy: "Feeling content", Car: "Motor vehicle for transportation"}
+dictionary [:New_York] = ["State that has NYC"]
+pp dictionary
 
 #10 Make a hash to store a shirt's brand, color, and size. Then print each attribute on separate lines.
+tShirt = {brand: "Nike", color: "Black", size: "Medium"}
+# pp tShirt [: brand]
+# pp tShirt [: color]
+# pp tShirt [: size]
+# or this way below
+tShirt.each do |info, style|
+  pp tShirt[info][style]
+end
