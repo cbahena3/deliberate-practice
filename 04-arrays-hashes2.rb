@@ -35,15 +35,22 @@ pp miniLibrary[2][:author]
 
 
 #6 Make a hash to store 3 different states and their captitals. Then add a new state and capital and print the hash to see the result.
-
+states = {Illinois: "Springfield", Wisconsin: "Madison", Texas: "Houston"}
+pp states
+states[:Oklahoma] = ["Oklahoma City"]
+pp states
 
 #7 Make a hash to store a laptop's brand, model, and year. Then print each attribute on separate lines.
-
+laptop = {Brand: "Apple", Model: "MacBook Air", Year:2020}
+pp laptop[:Brand]
+pp laptop[:Model]
+pp laptop[:Year]
 
 #8 Make an array of hashes to store the brand and model for 3 different laptops. Then print out the second laptop's model.
-
+laptopList = [{Brand: "Apple", Model: "MacBook Air"}, {Brand: "Apple", Model: "MacBook Pro"}, {Brand: "Microsoft", Model: "Surface Pro"}]
+pp laptopList[1][:Model]
 
 #9 Make a hash to store definitions for 2 different words. Then add a new word and definition and print the hash to see the result.
-
+dictionary = []
 
 #10 Make a hash to store a shirt's brand, color, and size. Then print each attribute on separate lines.
