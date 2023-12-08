@@ -1,14 +1,25 @@
 #1 Write a program that uses variables to store a first and last name, then prints the full name in one line using string concatenation (the + operator).
-
+firstName = "Cristian"
+lastName = "Bahena"
+pp firstName + " " + lastName
 
 #2 Write a program that uses variables to store a first and last name, then prints the full name in one line using string interpolation (the # {} operator).
-
+first_name = "Cristian"
+last_name = "Bahena"
+pp "#{first_name} #{last_name}"
 
 #3 Write a program that asks the user to input a word. If the word is "marco", print "polo".
-
+pp "Enter a word:"
+userWord = gets.chomp.capitalize
+if userWord == "Marco"
+  pp "polo"
+end
 
 #4 Write a program that uses variables to store three different colors, then prints out a sentence using the colors with string concatenation (the + operator).
-
+red = "red"
+blue = "blue"
+green = "green"
+pp "My favorite colors are "+ red + ", " + blue + ", " + green
 
 #5 Write a program that uses variables to store three different colors, then prints out a sentence using the colors with string interpolation (the # {} operator).
 
