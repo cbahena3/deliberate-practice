@@ -55,23 +55,50 @@ pp strLength
 
 #6 Start with an array of hashes and create a new array of number values from each hash's :age key.
 # For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes [27, 16].
+nameAge = [{name: "Karl", age: 22}, {name: "Cris", age: 200}, {name: "Megan", age: 21}, {name: "Kelly", age: 20}, {name: "John", age: 30}]
+ages = []
 
-
+nameAge.each do |i|
+  ages << i[:age]
+end
+pp "All ages: #{ages}"
 
 #7 Start with an array of numbers and create a new array with each number divided by 2.
 # For example, [1, 2, 3] becomes [0.5, 1.0, 1.5].
+myNums = [0, 1, 2, 3, 4, 5]
+divNums = []
 
-
+myNums.each do |i|
+  divNums<< i/2.0
+end
+pp divNums
 
 #8 Start with an array of strings and create a new array with each string's first letter only.
 # For example, ["hello", "goodbye"] becomes ["h", "g"].
+words = ["hi", "hello", "goodbye", "bye", "welcome"]
+firstLetters = []
 
-
+words.each do |i|
+  firstLetters << i[0]
+end
+pp firstLetters
 
 #9 Start with an array of hashes and create a new array of number values from each hash's :age key times 2.
 # For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes [54, 32].
+peopleAndAge = [{name: "Karl", age: 22}, {name: "Cris", age: 200}, {name: "Megan", age: 21}, {name: "Kelly", age: 20}, {name: "John", age: 30}]
+doubledAge = []
 
-
+peopleAndAge.each do |i|
+  doubledAge << (i[:age ]) * 2
+end
+pp doubledAge
 
 #10 Start with an array of numbers and create a new array with each number converted into a string.
 # For example, [1, 2, 3] becomes ["1", "2", "3"].
+allInt = [10, 20, 30, 40, 50]
+allStr = []
+
+allInt.each do |i|
+  allStr << i.to_s
+end
+pp allStr
