@@ -1,10 +1,28 @@
 # 1 Convert an array of arrays into a hash.
 # For example, [[1, 3], [8, 9], [2, 16]] becomes {1 => 3, 8 => 9, 2 => 16}.
+namesArray = [
+  ["Jon", 25],
+  ["Cris", 22],
+  ["Barry", 27],
+  ["Larry", 45],
+  ["Gary", 27]
+]
+namesToHash ={}
 
+namesArray.each do |i|
+  namesToHash[i[0]] = i[1]
+end
+pp namesToHash
 
 # 2 Convert an array of hashes into a hash using the :id key from the array's hashes as the keys in the new hash.
 # For example, [{id: 1, color: "blue", price: 32}, {id: 2, color: "red", price: 12}] becomes {1 => {id: 1, color: "blue", price: 32}, 2 => {id: 2, color: "red", price: 12}}.
+paint = [{id: 1, color: "blue", price: 32}, {id: 2, color: "red", price: 12}]
+paintById = {}
 
+paint.each do |i|
+  paintById[i[:id]] = i
+end
+pp paintById
 
 # 3 Convert a string into a hash with keys for each letter in the string and values for the number of times the letter appears in the string.
 # For example, "bookkeeper" becomes {"b" => 1, "o" => 2, "k" => 2, "e" => 3, "p" => 1, "r" => 1}.
@@ -12,7 +30,14 @@
 
 # 4 Convert a hash into an array of arrays.
 # For example, {"chair" => 100, "book" => 14} becomes [["chair", 100], ["book", 14]].
+officeSupply = {chair: 100, book: 14, desk: 149}
+listSupply = []
 
+
+officeSupply.each do |k|
+  listSupply << [k]
+end
+pp listSupply
 
 # 5 Convert a hash into an array of hashes using the keys from each hash as the :id key in each of the array's hashes.
 # For example, {321 => {name: "Alice", age: 31}, 322 => {name: "Maria", age: 27}} becomes [{id: 321, name: "Alice", age: 31}, {id: 322, name: "Maria", age: 27}].
