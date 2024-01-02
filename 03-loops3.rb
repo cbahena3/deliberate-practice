@@ -1,17 +1,43 @@
 # 1 Start with an array of numbers and create a new array with only the numbers less than 20.
 # For example, [2, 32, 80, 18, 12, 3] becomes [2, 18, 12, 3].
+numbers = [2, 32, 80, 18, 12, 3]
+under20 = []
 
+numbers.each do |number|
+  if number < 20
+    under20 << number
+  end
+end
+pp under20
 
 # 2 Start with an array of strings and create a new array with only the strings that start with the letter "w".
 # For example, ["winner", "winner", "chicken", "dinner"] becomes ["winner", "winner"].
+words = ["winner", "winner", "chicken", "dinner"]
+w_words = []
 
+words.each do |word|
+  if word[0] == "w"
+    w_words << word
+  end
+end
+pp w_words
 
 # 3 Start with an array of hashes and create a new array with only the hashes with prices greater than 5 (from the :price key).
 # For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "chair", price: 100}].
-
+office_supply = [
+  {name: "chair", price: 100},
+  {name: "pencil", price: 1},
+  {name: "book", price: 4}
+]
+pricey_supply = office_supply.select {|supply| supply[:price] > 5}
+pp pricey_supply
 
 # 4 Start with an array of numbers and create a new array with only the even numbers.
 # For example, [2, 4, 5, 1, 8, 9, 7] becomes [2, 4, 8].
+all_nums = [2, 4, 5, 1, 8, 9, 7]
+evens = all_nums.select {|i| i.even? #or you can do i % 2 == 0}
+pp evens
+
 
 
 # 5 Start with an array of strings and create a new array with only the strings shorter than 4 letters.
