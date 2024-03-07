@@ -1,16 +1,35 @@
 // 1 Start with an array of numbers and create a new array with each number times 3.
 //  For example, [1, 2, 3] becomes [3, 6, 9].
-
+let odds = [1, 3, 5];
+let triple = [];
+for(let i = 0; i < odds.length; i++){
+  triple.push(odds[i]*3);
+}
+console.log(triple);
 
 
 // 2 Start with an array of strings and create a new array with each string upcased.
 //  For example, ["hello", "goodbye"] becomes ["HELLO", "GOODBYE"].
+let greet = ["hi", "hello", "hey"];
+let greetUpper = [];
+for(let i = 0; i < greet.length; i++){
+  greetUpper.push(greet[i].toUpperCase());
+}
+console.log(greetUpper)
 
+// or you can do
+
+// let greet = ["hi", "hello", "hey"];
+// let greetUpper = greet.map((word)=>{word.toUpperCase});
+// console.log(greetUpper)
 
 
 // 3 Start with an array of hashes and create a new array of string values from each hash's :name key.
 //  For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes ["Alice", "Blane"].
 
+let nameAge = [{name: "Alice", age: 27}, {name: "Blane", age: 16}, {name: "John", age: 20}];
+let names = nameAge.map((i)=>{return i.name});
+console.log(names)
 
 
 // 4 Start with an array of numbers and create a new array with each number plus 7.
