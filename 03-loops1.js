@@ -7,10 +7,10 @@ while (output <= 10) {
 
 
 // 2. Write a while loop that prints the word "hello" 5 times.
-index = 0
-while (index < 5){
+let i = 0;
+while (i < 5){
     console.log("hello");
-    index = index + 1;
+    i = i + 1;
 }
 
 // 3. Write a while loop that asks the user to enter a word 
@@ -79,3 +79,7 @@ while(true){
 
 
 // 10. Write a while loop that prints the even numbers from 2 to 40.
+
+for(let i = 2; i < 40; i++){
+    console.log(i);
+}
