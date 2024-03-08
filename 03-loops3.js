@@ -1,9 +1,29 @@
 // 1 Start with an array of numbers and create a new array with only the numbers less than 20.
 // For example, [2, 32, 80, 18, 12, 3] becomes [2, 18, 12, 3].
+// let nums = [2, 32, 80, 18, 12, 3];
+// let under20 = [];
 
+// for(i = 0; i<nums.length; i++ ){
+//   if(nums[i]<20){
+//      under20.push(nums[i]);
+//   }
+// }
+// console.log(under20);
+//better way of doing it --->
+let nums = [2, 32, 80, 18, 12, 3];
+let under20 = nums.filter((num)=>{
+  return num<20;
+})
+console.log(under20);
 
 // 2 Start with an array of strings and create a new array with only the strings that start with the letter "w".
 // For example, ["winner", "winner", "chicken", "dinner"] becomes ["winner", "winner"].
+let myWords = ["winner", "winner", "chicken", "dinner"];
+let wWords = myWords.filter((word)=>{
+  return word[0]==="w";
+});
+
+console.log(wWords);
 
 
 // 3 Start with an array of hashes and create a new array with only the hashes with prices greater than 5 (from the :price key).
